@@ -64,15 +64,14 @@ const Celebration = () => {
           transition={{ delay: 3.2 }}
         >
           <motion.a
-            href="https://wa.me/917395971352?text=Yes%20I%20said%20YES!%20💕%20I%20will%20be%20yours%20forever%20❤️"
+            href="https://t.me/mr_das_66?text=Yes%20I%20said%20YES!%20💕%20I%20will%20be%20yours%20forever%20❤️"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block px-10 py-4 rounded-full bg-primary text-primary-foreground font-display text-lg tracking-wider"
-            style={{ animation: "glow-pulse 2s ease-in-out infinite" }}
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-primary/90 text-primary-foreground font-elegant text-base tracking-wide backdrop-blur-sm border border-primary/30"
+            whileHover={{ scale: 1.03 }}
+            whileTap={{ scale: 0.97 }}
           >
-            Tell Naveen on WhatsApp 💌
+            Send me a message 💌
           </motion.a>
         </motion.div>
 
