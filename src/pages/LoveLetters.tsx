@@ -4,12 +4,12 @@ import { useNavigate } from "react-router-dom";
 import RosePetals from "@/components/RosePetals";
 
 const loveMessages = [
-  { id: 1, title: "Your Smile", message: "Your smile lights up my entire world. Every time I see it, I fall in love all over again." },
-  { id: 2, title: "Every Moment", message: "Every moment with you is pure magic. Time stops when I'm looking into your eyes." },
-  { id: 3, title: "My Heart", message: "My heart beats only for you, Navina. You are the reason it keeps going." },
-  { id: 4, title: "Your Laugh", message: "Your laugh is my favorite melody. I could listen to it forever and never get tired." },
-  { id: 5, title: "My Dream", message: "You are the dream I never want to wake up from. My reality with you is better than any fantasy." },
-  { id: 6, title: "Forever", message: "I knew from the moment I met you — you were the one I'd love forever." },
+  { id: 1, title: "Your Smile", closedEmoji: "🎀", openedEmoji: "🌺", modalEmoji: "🌺", message: "Your smile lights up my entire world. Every time I see it, I fall in love all over again." },
+  { id: 2, title: "Every Moment", closedEmoji: "🎐", openedEmoji: "🦋", modalEmoji: "🦋", message: "Every moment with you is pure magic. Time stops when I'm looking into your eyes." },
+  { id: 3, title: "My Heart", closedEmoji: "🔮", openedEmoji: "💗", modalEmoji: "💗", message: "My heart beats only for you, Navina. You are the reason it keeps going." },
+  { id: 4, title: "Your Laugh", closedEmoji: "🪷", openedEmoji: "🎶", modalEmoji: "🎶", message: "Your laugh is my favorite melody. I could listen to it forever and never get tired." },
+  { id: 5, title: "My Dream", closedEmoji: "🌙", openedEmoji: "✨", modalEmoji: "✨", message: "You are the dream I never want to wake up from. My reality with you is better than any fantasy." },
+  { id: 6, title: "Forever", closedEmoji: "💎", openedEmoji: "🫀", modalEmoji: "🫀", message: "I knew from the moment I met you — you were the one I'd love forever." },
 ];
 
 const Landing = () => {
