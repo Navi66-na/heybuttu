@@ -58,10 +58,29 @@ const Celebration = () => {
         </motion.div>
 
         <motion.div
-          className="mt-16 flex justify-center gap-2"
+          className="mt-12"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 3.2 }}
+        >
+          <motion.a
+            href="https://wa.me/917395971352?text=Yes%20I%20said%20YES!%20💕%20I%20will%20be%20yours%20forever%20❤️"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block px-10 py-4 rounded-full bg-primary text-primary-foreground font-display text-lg tracking-wider"
+            style={{ animation: "glow-pulse 2s ease-in-out infinite" }}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            Tell Naveen on WhatsApp 💌
+          </motion.a>
+        </motion.div>
+
+        <motion.div
+          className="mt-8 flex justify-center gap-2"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 3.8 }}
         >
           {["❤️", "💕", "🌹", "💖", "✨"].map((emoji, i) => (
             <motion.span
