@@ -68,7 +68,7 @@ const Landing = () => {
               whileTap={{ scale: 0.97 }}
             >
               <div className="text-4xl mb-3">
-                {openedLetters.has(letter.id) ? "💌" : "✉️"}
+                {openedLetters.has(letter.id) ? letter.openedEmoji : letter.closedEmoji}
               </div>
               <p className="font-display text-lg text-foreground">{letter.title}</p>
               {openedLetters.has(letter.id) && (
@@ -102,7 +102,7 @@ const Landing = () => {
                 onClick={(e) => e.stopPropagation()}
                 style={{ boxShadow: "0 0 40px hsl(0 72% 50% / 0.2)" }}
               >
-                <div className="text-5xl mb-4">💕</div>
+                <div className="text-5xl mb-4">{loveMessages.find((l) => l.id === activeLetter)?.modalEmoji}</div>
                 <h3 className="font-display text-2xl text-foreground mb-4">
                   {loveMessages.find((l) => l.id === activeLetter)?.title}
                 </h3>
