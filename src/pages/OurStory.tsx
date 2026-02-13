@@ -3,12 +3,13 @@ import { useNavigate } from "react-router-dom";
 import RosePetals from "@/components/RosePetals";
 
 const storyMoments = [
-  { emoji: "✨", title: "The First Glance", text: "The moment our eyes met, the universe whispered — this is the one." },
-  { emoji: "🌹", title: "The First Conversation", text: "Words turned into hours, hours turned into a beautiful beginning we never wanted to end." },
-  { emoji: "💫", title: "Falling In Love", text: "Slowly then all at once — my heart chose you before my mind even knew." },
-  { emoji: "🌙", title: "Late Night Talks", text: "In the quiet of the night, we built a world only we could understand." },
-  { emoji: "💕", title: "Growing Together", text: "Every challenge made us stronger, every laugh made us closer. We became unstoppable." },
-  { emoji: "🔥", title: "An Unbreakable Bond", text: "What we have isn't just love — it's destiny, written in the stars long before we met." },
+  { emoji: "🏫", title: "Where It All Began", text: "We met at school — a place where everything was ordinary, until you walked into my life and made it extraordinary." },
+  { emoji: "📞", title: "The First Call", text: "I could only call you at first... too shy to say what I really felt. My heart raced every time I heard your voice." },
+  { emoji: "🫣", title: "The Confession", text: "Then one day, I gathered all my courage and told you — 'I have a crush on you.' That moment changed everything." },
+  { emoji: "👀", title: "Her Eyes, Her Beauty", text: "Your eyes pulled me in like a spell. Your beauty, inside and out, made falling in love feel like the most natural thing in the world." },
+  { emoji: "💛", title: "Her Heart For Me", text: "But what truly made me fall was your heart — the way you cared, the way you loved me back. That's when I knew this was real." },
+  { emoji: "🤫", title: "Our Quiet Moments", text: "The best memories aren't always the loudest. Our quiet moments together — just us, no words needed — those are the ones I treasure most." },
+  { emoji: "🔥", title: "An Unbreakable Bond", text: "Your personality, your energy, your kindness — everything about you makes me love you more each day. What we have is forever." },
 ];
 
 const OurStory = () => {
