@@ -1,5 +1,51 @@
-import { motion } from "framer-motion";
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import HeartRain from "@/components/HeartRain";
+
+const SurpriseReveal = () => {
+  const [revealed, setRevealed] = useState(false);
+
+  return (
+    <motion.div
+      className="mt-16"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ delay: 5 }}
+    >
+      <AnimatePresence mode="wait">
+        {!revealed ? (
+          <motion.button
+            key="emoji"
+            onClick={() => setRevealed(true)}
+            className="text-6xl md:text-7xl cursor-pointer bg-transparent border-none outline-none"
+            animate={{ y: [0, -15, 0], rotate: [0, 5, -5, 0] }}
+            transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 0.9 }}
+            exit={{ scale: 0, opacity: 0, transition: { duration: 0.3 } }}
+          >
+            🎁
+          </motion.button>
+        ) : (
+          <motion.p
+            key="message"
+            className="font-display text-4xl md:text-6xl text-accent text-glow"
+            initial={{ scale: 0, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 0.8, type: "spring", stiffness: 100 }}
+          >
+            <motion.span
+              animate={{ scale: [1, 1.05, 1] }}
+              transition={{ duration: 2, repeat: Infinity }}
+            >
+              I Love You 💖
+            </motion.span>
+          </motion.p>
+        )}
+      </AnimatePresence>
+    </motion.div>
+  );
+};
 
 const Celebration = () => {
   return (
@@ -93,28 +139,7 @@ const Celebration = () => {
           ))}
         </motion.div>
 
-        <motion.div
-          className="mt-16"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 5 }}
-        >
-          <motion.a
-            href="https://t.me/mr_das_66?text=I%20Love%20You%20💖❤️"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block font-display text-4xl md:text-6xl text-accent text-glow cursor-pointer"
-            animate={{
-              y: [0, -15, 0],
-              rotate: [0, 3, -3, 0],
-            }}
-            transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-            whileHover={{ scale: 1.15 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            I Love You 💖
-          </motion.a>
-        </motion.div>
+        <SurpriseReveal />
       </motion.div>
     </div>
   );
