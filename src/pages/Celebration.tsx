@@ -81,7 +81,7 @@ const Celebration = () => {
           animate={{ opacity: 1 }}
           transition={{ delay: 3.8 }}
         >
-          {["💍", "🌹", "✨", "🥂", "🦋"].map((emoji, i) => (
+        {["💍", "🌹", "✨", "🥂", "🦋"].map((emoji, i) => (
             <motion.span
               key={i}
               className="text-3xl"
@@ -91,6 +91,21 @@ const Celebration = () => {
               {emoji}
             </motion.span>
           ))}
+        </motion.div>
+
+        <motion.div
+          className="mt-16"
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ delay: 5, duration: 1.5, type: "spring" }}
+        >
+          <motion.p
+            className="font-display text-5xl md:text-7xl text-accent text-glow"
+            animate={{ scale: [1, 1.05, 1] }}
+            transition={{ duration: 3, repeat: Infinity }}
+          >
+            I Love You 💖
+          </motion.p>
         </motion.div>
       </motion.div>
     </div>
