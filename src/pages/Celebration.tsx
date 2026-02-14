@@ -24,7 +24,7 @@ const SurpriseReveal = () => {
             whileTap={{ scale: 0.9 }}
             exit={{ scale: 0, opacity: 0, transition: { duration: 0.3 } }}
           >
-            🎁
+            💝
           </motion.button>
         ) : (
           <motion.p
