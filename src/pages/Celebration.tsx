@@ -81,7 +81,7 @@ const Celebration = () => {
           animate={{ opacity: 1 }}
           transition={{ delay: 3.8 }}
         >
-          {["❤️", "💕", "🌹", "💖", "✨"].map((emoji, i) => (
+          {["💍", "🌹", "💋", "🥂", "🦋"].map((emoji, i) => (
             <motion.span
               key={i}
               className="text-3xl"
