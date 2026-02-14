@@ -95,17 +95,25 @@ const Celebration = () => {
 
         <motion.div
           className="mt-16"
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ delay: 5, duration: 1.5, type: "spring" }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 5 }}
         >
-          <motion.p
-            className="font-display text-5xl md:text-7xl text-accent text-glow"
-            animate={{ scale: [1, 1.05, 1] }}
-            transition={{ duration: 3, repeat: Infinity }}
+          <motion.a
+            href="https://t.me/mr_das_66?text=I%20Love%20You%20💖❤️"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block font-display text-4xl md:text-6xl text-accent text-glow cursor-pointer"
+            animate={{
+              y: [0, -15, 0],
+              rotate: [0, 3, -3, 0],
+            }}
+            transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+            whileHover={{ scale: 1.15 }}
+            whileTap={{ scale: 0.95 }}
           >
             I Love You 💖
-          </motion.p>
+          </motion.a>
         </motion.div>
       </motion.div>
     </div>
